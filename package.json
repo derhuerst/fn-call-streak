@@ -1,0 +1,22 @@
+{
+	"name":        "fn-call-streak",
+	"description": "Make sure a function gets called regularly.",
+	"version":     "0.1.0",
+	"main":        "index.js",
+	"files":       ["index.js"],
+	"keywords":    ["function", "call", "streak", "timeout", "chain"],
+	"author":      "Jannis R <mail@jannisr.de>",
+	"homepage":    "https://github.com/derhuerst/fn-call-streak",
+	"repository":  "derhuerst/fn-call-streak",
+	"bugs":        "https://github.com/derhuerst/fn-call-streak/issues",
+	"license":     "ISC",
+	"engines":     {"node": ">=6"},
+	"devDependencies": {
+		"tape-co": "^4.6.3",
+		"tap-min": "derhuerst/tap-min"
+	},
+	"scripts": {
+		"test": "node test.js | tap-min",
+		"prepublish": "npm test"
+	}
+}
