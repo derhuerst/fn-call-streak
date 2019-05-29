@@ -4,9 +4,7 @@ const lolex = require('lolex')
 const test = require('tape')
 const streak = require('.')
 
-const clock = lolex.install(Date.now())
-
-
+const clock = lolex.install({now: Date.now()})
 
 test('returns a function "check"', (t) => {
 	t.plan(2)
